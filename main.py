@@ -19,19 +19,16 @@ with open(r'E:\Github\Report_Extraction_Automation\password.txt', 'r') as pw:
 password_.send_keys(password)
 password_.send_keys(Keys.RETURN)
 print('You are logged in!')
-time.sleep(10)
+time.sleep(8)
 
 launch_btn = driver.find_element('id','Body_Launch0')
 launch_btn.click()
-time.sleep(15)
+time.sleep(18)
 
 import sub
 sub.Report_Finder('Reports')
-time.sleep(6)
 sub.Report_Finder('Sales')
-time.sleep(6)
 sub.Report_Finder('Sales by Item Summary')
-time.sleep(6)
 sub.Report_Finder('Export')
 
 time.sleep(300)

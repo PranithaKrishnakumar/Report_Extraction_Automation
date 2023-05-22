@@ -1,4 +1,5 @@
 import pyautogui
+import time
 
 def Report_Finder(tag):
     try:
@@ -8,6 +9,7 @@ def Report_Finder(tag):
         #print(button_X, button_Y)
         pyautogui.click(button_X, button_Y)
         print("Passed")
+        time.sleep(6)
     
     except:
         print("Failed")
