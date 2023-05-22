@@ -23,15 +23,15 @@ time.sleep(10)
 
 launch_btn = driver.find_element('id','Body_Launch0')
 launch_btn.click()
-time.sleep(10)
+time.sleep(15)
 
 import sub
 sub.Report_Finder('Reports')
-time.sleep(10)
+time.sleep(6)
 sub.Report_Finder('Sales')
-time.sleep(10)
+time.sleep(6)
 sub.Report_Finder('Sales by Item Summary')
-time.sleep(10)
+time.sleep(6)
 sub.Report_Finder('Export')
 
 time.sleep(300)
