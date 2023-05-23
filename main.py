@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import pyautogui
 
 
 driver = webdriver.Chrome(r'E:\Github\Report_Extraction_Automation\chromedriver.exe')
@@ -29,7 +30,13 @@ import sub
 sub.Report_Finder('Reports')
 sub.Report_Finder('Sales')
 sub.Report_Finder('Sales by Item Summary')
-sub.Report_Finder('Export')
+sub.Report_Finder('Email')
+sub.Report_Finder('Send report as Excel')
+sub.Report_Finder('Ok')
+sub.Report_Finder('Box')
+pyautogui.write('bcs.dwh@questas.com.au')
+sub.Report_Finder('Ok')
+
 
 time.sleep(300)
 
